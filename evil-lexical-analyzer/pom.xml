@@ -9,9 +9,16 @@
   </parent>
 
   <packaging>jar</packaging>
-  <artifactId>lexical-analyzer</artifactId>
+  <artifactId>evil-lexical-analyzer</artifactId>
 
   <name>lexical-analyzer</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>evil-analyzer-common</artifactId>
+    </dependency>
+  </dependencies>
 
   <developers>
     <developer>

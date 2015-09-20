@@ -75,6 +75,39 @@
     </dependency>
   </dependencies>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>evil-analyzer-common</artifactId>
+        <version>${project.version}</version>
+        <scope>compile</scope>
+        <type>jar</type>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>evil-lexical-analyzer</artifactId>
+        <version>${project.version}</version>
+        <scope>compile</scope>
+        <type>jar</type>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>evil-syntax-analyzer</artifactId>
+        <version>${project.version}</version>
+        <scope>compile</scope>
+        <type>jar</type>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>evil-semantic-analyzer</artifactId>
+        <version>${project.version}</version>
+        <scope>compile</scope>
+        <type>jar</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <build>
     <plugins>
       <plugin>

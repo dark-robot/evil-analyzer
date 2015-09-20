@@ -13,6 +13,13 @@
 
   <name>evil-semantic-analyzer</name>
 
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>evil-syntax-analyzer</artifactId>
+    </dependency>
+  </dependencies>
+
   <developers>
     <developer>
       <id>dark.robot</id>
