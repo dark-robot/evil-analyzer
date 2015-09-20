@@ -5,11 +5,12 @@
   <groupId>dark.robot</groupId>
   <artifactId>evil-analyzer</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  
+
   <modules>
     <module>evil-lexical-analyzer</module>
     <module>evil-syntax-analyzer</module>
     <module>evil-semantic-analyzer</module>
+    <module>evil-analyzer-runner</module>
   </modules>
 
   <packaging>pom</packaging>
