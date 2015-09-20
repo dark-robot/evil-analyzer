@@ -7,6 +7,7 @@
   <version>1.0.0-SNAPSHOT</version>
 
   <modules>
+    <module>evil-analyzer-common</module>
     <module>evil-lexical-analyzer</module>
     <module>evil-syntax-analyzer</module>
     <module>evil-semantic-analyzer</module>
