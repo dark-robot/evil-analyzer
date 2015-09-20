@@ -16,25 +16,24 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package dark.robot.analyzer.runner;
-
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+package dark.robot.analyzer.common.loader;
 
 /**
- * Application start class
+ * Worker interface to load a file resource
  *
  * @author dark.robot
  * @version 1.0.0
  * @since 1.0.0
  */
-@Configuration
-@ComponentScan
-public class Application {
+public interface ILoader {
 
-  public static void main(String[] args) {
-    ApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
-  }
+  /**
+   * Loads a file
+   *
+   * @param file the name of the file to read from
+   * @return An array of lines
+   * @throws LoaderException if the {@code file} is {@value null}, the file not exits, or {@code IOException} happened at read a line.
+   * @since 1.0.0
+   */
+  String[] load(String file);
 }
