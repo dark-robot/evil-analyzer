@@ -1,28 +1,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>evil-analyzer</artifactId>
-        <groupId>dark.robot</groupId>
-        <version>1.0.0-SNAPSHOT</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>evil-syntax-analyzer</artifactId>
-    <packaging>jar</packaging>
+  <parent>
+    <artifactId>evil-analyzer</artifactId>
+    <groupId>dark.robot</groupId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
 
-    <name>evil-syntax-analyzer</name>
-    <url>http://maven.apache.org</url>
+  <packaging>jar</packaging>
+  <artifactId>evil-syntax-analyzer</artifactId>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+  <name>evil-syntax-analyzer</name>
 
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+  <developers>
+    <developer>
+      <id>dark.robot</id>
+      <name>Daniel Quiroz</name>
+      <email>dark.robot.corp@gmail.com</email>
+      <url>https://github.com/dark-robot</url>
+    </developer>
+  </developers>
 </project>
