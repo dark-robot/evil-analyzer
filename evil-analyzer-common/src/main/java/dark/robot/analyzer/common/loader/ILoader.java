@@ -21,11 +21,12 @@ package dark.robot.analyzer.common.loader;
 /**
  * Worker interface to load a file resource
  *
+ * @param <R> the result type
  * @author dark.robot
  * @version 1.0.0
  * @since 1.0.0
  */
-public interface ILoader {
+public interface ILoader<R> {
 
   /**
    * Loads a file
@@ -35,5 +36,5 @@ public interface ILoader {
    * @throws LoaderException if the {@code file} is {@value null}, the file not exits, or {@code IOException} happened at read a line.
    * @since 1.0.0
    */
-  String[] load(String file);
+  R load(String file);
 }

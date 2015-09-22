@@ -34,7 +34,7 @@ import java.io.IOException;
  * @since 1.0.0
  */
 @Service(value = "fileLoader")
-public class FileLoader implements ILoader {
+public class FileLoader implements ILoader<String[]> {
 
   /**
    * System line separator
@@ -82,7 +82,7 @@ public class FileLoader implements ILoader {
    * @throws LoaderException if an {@code IOException} happened at read a line
    * @since 1.0.0
    */
-  private String[] load(BufferedReader source) {
+  protected String[] load(BufferedReader source) {
     StringBuilder content = new StringBuilder();
     String line;
 
