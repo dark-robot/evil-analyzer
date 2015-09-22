@@ -44,9 +44,10 @@ public class JsonLoader implements ILoader<List<Lexeme>> {
 
   /**
    * Constructs a new {@code JsonLoader} without arguments
+   * @since 1.0.0
    */
   public JsonLoader() {
-    this.mapper = new ObjectMapper();;
+    this.mapper = new ObjectMapper();
   }
 
   /**

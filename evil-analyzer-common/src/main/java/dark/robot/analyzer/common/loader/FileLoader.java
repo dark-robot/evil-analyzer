@@ -43,6 +43,7 @@ public class FileLoader implements ILoader<String[]> {
 
   /**
    * Constructs a file loader without arguments
+   * @since 1.0.0
    */
   public FileLoader() {
     super();
@@ -50,6 +51,7 @@ public class FileLoader implements ILoader<String[]> {
 
   /**
    * {@inheritDoc}
+   * @since 1.0.0
    */
   @Override
   public String[] load(String file) {
